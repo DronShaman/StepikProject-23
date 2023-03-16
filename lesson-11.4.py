@@ -5,3 +5,5 @@ for i in range(0, len(numbers)):
     a = numbers[i] * numbers[i]
     s = a + s
 print(s)
+
+
