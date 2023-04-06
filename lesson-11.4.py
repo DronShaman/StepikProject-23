@@ -1,9 +1,13 @@
 #Дополните приведенный код, так чтобы он вывел сумму квадратов элементов списка numbers
-numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
-s = 0
-for i in range(0, len(numbers)):
-    a = numbers[i] * numbers[i]
-    s = a + s
-print(s)
+n = int(input())
+numbers = []
+for i in range(0, n):
+    m = int(input())
+    numbers.append(m)
 
-
+for i in range(0, n):
+    print(numbers[i])
+print("\n")
+for i in range(0, n):
+    s = numbers[i] * numbers[i] + 2 * numbers[i] + 1
+    print(s)
