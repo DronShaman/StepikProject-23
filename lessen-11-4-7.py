@@ -1,12 +1,21 @@
 n = int(input())
 zap = []
 rez = []
+z = []
 
 for i in range(0, n):
     m = input()
     zap.append(m)
-new = input()
+k = int(input())
+for j in range(0, k):
+    s = input()
+    rez.append(s)
 
 for i in range(0, n):
-    if new in zap[i] or new.title() in zap[i] or new.lower() in zap[i] or new.upper() in zap[i] or new.swapcase() in zap[i] or new.capitalize() in zap[i]:
-        print(zap[i])
+    for g in range(0, k):
+        if rez[g].lower() in zap[i].lower():
+            z.append(zap[i])
+
+z = list(set(z))
+for i in range(0, len(z)):
+    print(z[i])

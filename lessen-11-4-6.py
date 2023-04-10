@@ -12,7 +12,7 @@ for i in range(0, n):
 new = input()
 
 for i in range(0, n):
-    if new in zap[i] or new.title() in zap[i] or new.lower() in zap[i] or new.upper() in zap[i] or new.swapcase() in zap[i] or new.capitalize() in zap[i]:
+    if new.lower() in zap[i].lower():
         print(zap[i])
 
 # Костин рабочий вариант
